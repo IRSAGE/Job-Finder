@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Merriweather Sans",sans-serif;
+    color: white;
+    background: #11121A;
+}
+header{
+    background: #1c1c24;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.header-container{
+     max-width: 1250px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+}
+.header-container .logo{
+    height: 45px;
+    margin-right: 10px;
+}
+.header-container .logo img{
+    height: 100%;
+}
