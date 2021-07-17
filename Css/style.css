@@ -10,6 +10,8 @@ body {
 header {
   background: #1c1c24;
   height: 70px;
+  /* width: 100%;
+   position: fixed; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,4 +76,39 @@ header {
 }
 .button-container:hover {
   background: #5a81ff;
+}
+
+.job-list {
+  max-width: 1250px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+.job-list h1 {
+  margin-left: 25px;
+  font-size: 20px;
+}
+.jobs-container {
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background: #11121A;
+}
+.job-tile{
+    background: pink;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    transition: transform 0.2s;
+}
+.job-tile:hover{
+    transform: scale(1.05);
 }
