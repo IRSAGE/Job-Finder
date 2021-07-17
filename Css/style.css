@@ -95,66 +95,78 @@ header {
   display: grid;
   /* flex-grow: 1; */
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   gap: 40px;
-  background: #11121A;
+  background: #11121a;
 }
-.job-tile{
-    background: #1c1c24;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: white;
-    padding: 30px;
-    transition: transform 0.2s;
+.job-tile {
+  background: #1c1c24;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  padding: 30px;
+  transition: transform 0.2s;
 }
-.job-tile:hover{
-    transform: scale(1.05);
+.job-tile:hover {
+  transform: scale(1.05);
 }
-.top{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.top img{
-   width: 50px;
-   height: 50px;
-   border-radius: 10px;
+.top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.rolename{
-    padding: 20px 0px;
+.rolename {
+  padding: 20px 0px;
 }
-.rolename span{
-    font-size: 22px;
+.rolename span {
+  font-size: 22px;
 }
-.description{
-    height: 105px;
-    flex-grow: 1;
-    overflow: hidden;
-    font-size: 18px;
-    color: #96939B;
+.description {
+  height: 105px;
+  flex-grow: 1;
+  overflow: hidden;
+  font-size: 18px;
+  color: #96939b;
 }
-.buttons{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    height: 45px;
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
 }
-.button{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #95939b;
-    background-color: #2E2E39;
-    font-size: 14px;
+.button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #95939b;
+  background-color: #2e2e39;
+  font-size: 14px;
 }
-.apply-now{
-    color: white;
-    background:#3060ff;
-    margin-right: 20px;
+.apply-now {
+  color: white;
+  background: #3060ff;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 930px) {
+  .jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jobs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
