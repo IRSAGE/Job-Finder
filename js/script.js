@@ -45,3 +45,23 @@ function showJobs(jobs) {
   });
   jobContainer.innerHTML = jobsHtml;
 }
+
+function filterJobs(jobs, searchText) {
+  if (searchText) {
+    let filteredJobs = jobs.filter((job) => {
+      if (
+        job.roleName.tolowerCase().includes(searchText) ||
+        job.type.tolowerCase().includes(searchText) ||
+        job.company.tolowerCase().includes(searchText) ||
+        job.requirements.content.tolowerCase().includes(searchText)
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    return filteredJobs;
+  } else {
+    return jobs;
+  }
+}
